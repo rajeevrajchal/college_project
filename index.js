@@ -6,7 +6,9 @@ app.use(express.urlencoded({ extended: true }))
 
 require('./routes')(app)
 
-const port = 3000
+const port = 8000
 app.listen(port, () => {
     console.log(`server  hosted on localhost:${port}`)
 });
+
+module.exports = app
